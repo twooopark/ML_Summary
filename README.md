@@ -44,4 +44,5 @@ Supervised learning and Unsupervised learning.
 ```
 데이터(올바른 답)을 모두 제공하고, 더 다양한 올바른 답을 얻어올 수 있도록 하는 알고리즘.
 regression problem : 연속적인 결과를 예측하는 것.
+classification : 0 또는 1과 같이 이산적인 분류된 결과를 예측하는 것.
 ```
