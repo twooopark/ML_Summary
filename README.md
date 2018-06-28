@@ -46,3 +46,37 @@ Supervised learning and Unsupervised learning.
 regression problem : 연속적인 결과를 예측하는 것.
 classification : 0 또는 1과 같이 이산적인 분류된 결과를 예측하는 것.
 ```
+1.3.1 regression problem 
+  평수 크기와 가격은 어떤 관계가 있는 지? 많은 데이터들로 결과를(그래프) 알게 되었다. 알고싶은 평수에 따른 결과(가격)을 알 수 있게 되었다.
+  
+
+<img src="https://github.com/twooopark/ML_Summary/blob/master/1-1_RegressionProblem.JPG" width="600px" height="300px" />
+
+1.3.2 classification
+  Tumor(종양)의 크기에 따라, Malignant(악성)인지 아닌지 알 수 있을까? 사이즈가 작으면 0, 크면 1이라는 결과를 얻었다. 크기가 일정 이상이면 악성종양일 확률이 높다는 것을 알 수 있게 되었다.
+
+<img src="https://github.com/twooopark/ML_Summary/blob/master/1-2_Classification.JPG" width="600px" height="300px" />
+
+1.3.2 classification
+ Tumor Size와 Age의 상관관계 1.3.1의 x, y축 2차원 그래프를 사용했다. 범위에 따른 결과 값(예측에 사용될 값)을 얻을 수 있었다. 
+
+<img src="https://github.com/twooopark/ML_Summary/blob/master/1-3_Classification.JPG" width="600px" height="300px" />
+
+1.3 Supervised Learning
+```
+In supervised learning, we are given a data set and already know what our correct output should look like, having the idea that there is a relationship between the input and the output.
+
+Supervised learning problems are categorized into "regression" and "classification" problems. In a regression problem, we are trying to predict results within a continuous output, meaning that we are trying to map input variables to some continuous function. In a classification problem, we are instead trying to predict results in a discrete output. In other words, we are trying to map input variables into discrete categories.
+
+Example 1:
+
+Given data about the size of houses on the real estate market, try to predict their price. Price as a function of size is a continuous output, so this is a regression problem.
+
+We could turn this example into a classification problem by instead making our output about whether the house "sells for more or less than the asking price." Here we are classifying the houses based on price into two discrete categories.
+
+Example 2:
+
+(a) Regression - Given a picture of a person, we have to predict their age on the basis of the given picture
+
+(b) Classification - Given a patient with a tumor, we have to predict whether the tumor is malignant or benign.
+```
