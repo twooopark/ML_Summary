@@ -110,6 +110,69 @@ Clustering: Take a collection of 1,000,000 different genes, and find a way to au
 Non-clustering: The "Cocktail Party Algorithm", allows you to find structure in a chaotic environment. (i.e. identifying individual voices and music from a mesh of sounds at a cocktail party).
 ```
 
+1.3 Linear regression with one variable
+
+1.3.1 Model representaion
+```
+x는 입력, y는 출력, h는 가설입니다.
+```
+<img src="https://github.com/twooopark/ML_Summary/blob/master/2-1_htheta_1.JPG" width="480px" height="270px" />
+
+1.3.2 Cost function
+```
+제공된 데이터 X들에 대해서 가설의 결과 값H과, 실제 결과 값Y의 차이를 제곱한 값들의 평균 값을 J라 합니다.
+J가 최소가 되는 세타0(θ0), 세타1(θ1)을 찾는 것이 우리의 목표입니다. 오차가 제일 작다는 뜻이기 때문입니다.
+제곱을 하는 이유는 두 가지입니다.
+1. 오차가 음수일 경우 양수로 통일
+2. 오차가 클 수록 더 많은 페널티 부여
+```
+<img src="https://github.com/twooopark/ML_Summary/blob/master/2-1_htheta_2.JPG" width="480px" height="270px" />
+
+```
+간단한 데이터, y=x인 선형 그래프로 예시를 들어보자면, 아래 그림과 같습니다.
+우리가 확인해보고자 하는 가설 h는 세타0 = 0, 세타1 = 1 일 때 입니다.
+모든 X에 대한, 가설H와 결과Y의 오차가 모두 0이기 때문에, J는 0임을 구했습니다.
+```
+<img src="https://github.com/twooopark/ML_Summary/blob/master/2-1_htheta_3.JPG" width="480px" height="270px" />
+
+```
+만일, 세타1 = 0.5라고 한다면, 오차 값이 x는 1일때 0.5, 2일때 1, 3일때 1.5로 J는 1/6*(3.5)..약0.58 가 됩니다.
+세타 = 1이면, J는 약 2.3이 되며, J의 그래프가 이차함수의 그래프와 유사한 모양이 됩니다.
+
+```
+<img src="https://github.com/twooopark/ML_Summary/blob/master/2-1_htheta_4.JPG" width="480px" height="270px" />
+
+
+
+1.3.3 Gradient descent
+```
+기울기 하강법은 J값을 가지고 J의 최소값을 구하는 방법입니다.
+세타0(θ0), 세타1(θ1)에서 시작해서 세타값들을 변경하면서,
+convergence(수렴)까지, 즉, J를 최소값이 될 때 까지 줄여나갑니다.
+아래와 같이 기울기가 음수이든 양수이든 최소값을 향해 가는 것을 알 수 있습니다.
+```
+<img src="https://github.com/twooopark/ML_Summary/blob/master/3-1_G_descent_1.JPG" width="480px" height="270px" />
+
+
+* Learning rate(α)  
+```
+기울기 하강법에 적용되는 알파값(α:학습률)을 이용해 J값의 변화를 얼마나 할지 조정합니다.
+이 학습률(α)은 너무 작으면, 최소값을 찾는데 오래걸리고
+너무 크면, 최소값을 지나쳐 탐색하면서, 결국엔 값이 발산할 수 있습니다.
+그리고 J가 줄어들며 수렴을 향해가기 때문에, 이 α값은 바꿀 필요가 없습니다.
+그럼 이 α는 어떻게 선정해야 할까?....
+```
+<img src="https://github.com/twooopark/ML_Summary/blob/master/3-1_G_descent_2.JPG" width="480px" height="270px" />
+
+1.3.4 Gradient descent for linear regression
+```
+기울기 하강법과 선형 회귀 공식입니다.
+선형회귀모델에 기울기 하강법을 적용시킴으로써
+회귀 모델에서 만들어진 가설 H값의 오차J가 최소가 되는 값을 
+기울기 하강법으로 세타를 줄여나가는 방식으로 찾아냄을 알 수 있습니다.
+```
+<img src="https://github.com/twooopark/ML_Summary/blob/master/3-1_G_descent_3.JPG" width="480px" height="270px" />
+
 
 
 
