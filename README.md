@@ -173,6 +173,17 @@ convergence(수렴)까지, 즉, J를 최소값이 될 때 까지 줄여나갑니
 ```
 <img src="https://github.com/twooopark/ML_Summary/blob/master/3-1_G_descent_3.JPG" width="480px" height="270px" />
 
+1.3.5 multivariate linear regression
+```
+위에서 설명한 선형 회귀는 단일선형회귀 입니다. 집의 가격(Y)를 구할 때, 집의 크기(X) 1가지의 조건만 고려했기때문입니다.
+다중(다변량)선형회귀는 집의 층수, 방 수 등의 여러가지의 조건을 고려하는 선형 회귀입니다차원
+```
+<img src="https://github.com/twooopark/ML_Summary/blob/master/3-1_G_descent_4.JPG" width="480px" height="270px" />
+<img src="https://github.com/twooopark/ML_Summary/blob/master/3-1_G_descent_5.JPG" width="480px" height="270px" />
+
+1.3.6 Feature Scaling
+```
 
 
+```
 
