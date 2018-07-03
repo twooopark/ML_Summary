@@ -1,6 +1,13 @@
 ML_Summary
 -----
+```
+참고한 자료들 
 Machine Learning / Andrew Ng / StanfordUniv
+https://www.coursera.org/learn/machine-learning/
+
+구글 머신러닝 강좌
+https://developers.google.com/machine-learning/crash-course/?utm_source=google-ai&utm_medium=card-image&utm_campaign=training-hub&utm_content=ml-crash-course
+```
 
 ## WEEK 1
 1. 머신 러닝의 개념
@@ -182,8 +189,20 @@ convergence(수렴)까지, 즉, J를 최소값이 될 때 까지 줄여나갑니
 <img src="https://github.com/twooopark/ML_Summary/blob/master/3-1_G_descent_5.JPG" width="480px" height="270px" />
 
 1.3.6 Feature Scaling
+- 이번엔 기울기 하강법을 빠르게 수행할 수 있도록 하려면, 조건 X와 α의 값을 어떻게 조정해야 하는지 알아보겠습니다.
+```
+만약, 이 cost function에 gradient descent를 적용한다면, gradient는 오랜 시간 동안 앞 뒤로 진동하며, 엄청난 시간이 지나고 나서야 마침내 최소값에 도달할 것입니다. 실제로, 등고선이 극단적인 경우를 생각해보면 즉 엄청 얇은, 얇고 긴 등고선이라면, 
+그리고 더욱 극단적으로 과장한다면, gradient descent는 훨씬 더 많은 시간을 소요하며, 구불구불하게 가다가, 오랜 시간이 지나서야 최소값을 찾을 수 있습니다. 이 때, 유용한 방법이 feature를 조절(scale)하는 것입니다. 
+```
+<img src="https://github.com/twooopark/ML_Summary/blob/master/3-1_G_feature_scaling_1.JPG" width="480px" height="270px" />
+
+1. 범위를 유사하게 합니다.
+```
+모든 feature들의 값을 조절하여, -3 ~ - 1/3 < X < 1/3 ~ 3 정도로 조절하면, 빠른 결과를 얻을 수 있습니다.
 ```
 
-
+2. mean nomalization 하는 이유
+3. feature scaling 하는 방법
+4. 적절한 learning rate 찾는 법
 ```
 
