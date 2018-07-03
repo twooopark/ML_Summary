@@ -202,7 +202,11 @@ convergence(수렴)까지, 즉, J를 최소값이 될 때 까지 줄여나갑니
 ```
 
 2. mean nomalization 하는 이유
-3. feature scaling 하는 방법
-4. 적절한 learning rate 찾는 법
+```
+feature의 평균만큼 빼고, 최대값-최소값으로 나눕니다. feature에 관한 이 식은 정확하게는 아니더라도 대략 저 범위만큼 될 것입니다. 엄밀히 따진다면, 최대값에서 최소값을 뺏을 때, 실제로는 4가 됩니다. 즉, 최대값이 5고, 최소값이 1이면 range는 4가 되지만 여기서 대부분이 근사값이고, feature의 값도 range와 거의 차이가 없기 때문에 괜찮습니다. feature scaling은 너무 정확할 필요는 없습니다. gradient descent가 훨씬 더 빨라지면 되기 때문이죠 
 ```
 
+3. 적절한 learning rate 찾는 법
+```
+
+```
