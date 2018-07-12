@@ -208,5 +208,26 @@ feature의 평균만큼 빼고, 최대값-최소값으로 나눕니다. feature�
 
 3. 적절한 learning rate 찾는 법
 ```
-
+다 날라갔다...
 ```
+
+
+
+
+DeepLearning.
+
+CNN : convolution neural network, 합성곱 신경 망 : 이미지 레이어들의 특징점들을 이용하여, 이미지를 인식할 수 있도록 하는 알고리즘.
+Word2vec : 구글에서 만듬, 단어를 벡터로 바꿈으로써, 단어의 유사도 추출 가능. 
+
+
+
+
+
+
+
+
+
+
+
+
+
