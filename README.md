@@ -34,11 +34,14 @@ Supervised learning and Unsupervised learning.
 ```
 
 1.1 활용 예시
+
  * 데이터베이스 마이닝입니다. 웹 클릭 기록, 의료 기록, 유전자 분석, 공학분야 등 
 우리가 수집할 수 있는 데이터 량이 많아지면서 활용성이 높아졌습니다.
+
  * 수동적으로 프로그래밍 할 수 없을 때 입니다. 헬리콥터가 비행하도록 하는 프로그래밍은 굉장히 어렵습니다. 
-이러한 동작을 머신러닝을 통해 자동 프로그래밍 할 수 있습니다. 
+이러한 동작을 머신러닝을 통해 자동 프로그래밍 할 수 있습니다.
 손 글씨를 읽는 경우도 있습니다. 자연 언어 처리기법, 컴퓨터 비젼도 마찬가지입니다.
+
  * 스스로 프로그래밍하는 프로그램, 아마존, 넷플릭스의 추천 서비스가 그 예입니다. 
 수십만의 사용자를 다루는데 매번 다른 프로그램을 적용하긴 어렵습니다.
 
@@ -211,6 +214,32 @@ feature의 평균만큼 빼고, 최대값-최소값으로 나눕니다. feature�
 다 날라갔다...
 ```
 
+
+
+
+### 머신러닝 분야 정리
+
+  a. 지도학습(Supervised Learning) : 과거, 현재 데이터로 미래를 예측 (라벨링 된 데이터 : 데이터에 대한 답이 주어져 있는 것 : 평가가 되어 있는 것)
+  
+    - 분류(Classfication) : Categorial data, 데이터를 카테고리에 따라 분류. Ex) KNN, Logistic Regression, SVM
+    
+    - 회귀(Regression) : Continuous data, 연속된 값을 예측, 패턴이나 경향을 예측할 때 사용 Ex) Linear Regression, Random Forests
+    
+    
+  b. 비지도학습(Unsupervised Learning) : 과거, 현재 데이터로 미래를 예측 (평가되지 않은 : 라벨링되어 있지 않은 데이터로 미래를 예측) 
+  
+    - 군집(Clustering) : 데이터의 라벨이나 카테고리가 무엇인지 알 수 없는 경우가 많기 때문에 사용된다. Ex) K-means
+    
+    - 차원축소(Dimentionality Reduction) : 특징(feature)이 너무 많기 때문에 학습이 어렵고 더 좋은 특징만 가지고 사용하기 위해 사용. Ex) PCA, CNN's Pooling(Subsampling)
+    
+    - Categorial data >> Hidden Markov Model ...
+    
+    
+  c. 강화학습(Reinforcement Learning)  
+  
+    -  action에 따른 reward를 통해 학습한다. 이 과정을 반복해, 최상의 결과를 얻는 것이 목표. Ex) 공 튀기기 게임 인공지능)
+    
+    지도, 비지도와 달리 데이터가 정답이 있는 것이 아니며, 주어진 데이터가 없을 수도 있다. 
 
 
 
