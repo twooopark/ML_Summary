@@ -219,18 +219,17 @@ feature의 평균만큼 빼고, 최대값-최소값으로 나눕니다. feature�
 
 ### 머신러닝 분야 정리
 
-  a. 지도학습(Supervised Learning) : 과거, 현재 데이터로 미래를 예측 (라벨링 된 데이터 : 데이터에 대한 답이 주어져 있는 것 : 평가가 되어 있는 것)
+  a. 지도학습(Supervised Learning) : 과거, 현재 데이터로 미래를 예측 (라벨링 된 데이터 : 데이터에 대한 답이 주어져 있는 것 : 평가가 되어 있는 것 : 모델링 되어있는 것)
   
     - 분류(Classfication) : Categorial data, 데이터를 카테고리에 따라 분류. Ex) KNN, Logistic Regression, SVM
     
     - 회귀(Regression) : Continuous data, 연속된 값을 예측, 패턴이나 경향을 예측할 때 사용 Ex) Linear Regression, Random Forests
     
     
-  b. 비지도학습(Unsupervised Learning) : 과거, 현재 데이터로 미래를 예측 (평가되지 않은 : 라벨링되어 있지 않은 데이터로 미래를 예측) 
+  b. 비지도학습(Unsupervised Learning) : 과거, 현재 데이터로 미래를 예측 (답이 정해지지 않은 데이터 : 평가되지 않은 데이터 : 라벨링되어 있지 않은 데이터, 로 미래를 예측) 
   
     - 군집(Clustering) : 데이터의 라벨이나 카테고리가 무엇인지 알 수 없는 경우가 많기 때문에 사용된다. Ex) K-means
     
-    - 차원축소(Dimentionality Reduction) : 특징(feature)이 너무 많기 때문에 학습이 어렵고 더 좋은 특징만 가지고 사용하기 위해 사용. Ex) PCA, CNN's Pooling(Subsampling)
     
     - Categorial data >> Hidden Markov Model ...
     
@@ -242,6 +241,7 @@ feature의 평균만큼 빼고, 최대값-최소값으로 나눕니다. feature�
     지도, 비지도와 달리 데이터가 정답이 있는 것이 아니며, 주어진 데이터가 없을 수도 있다. 
 
 
+  - 차원축소(Dimentionality Reduction) : 특징(feature)이 너무 많기 때문에 학습이 어렵고 더 좋은 특징만 가지고 사용하기 위해 사용. Ex) PCA, CNN's Pooling(Subsampling)
 
 DeepLearning.
 
