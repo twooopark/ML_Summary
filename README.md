@@ -9,8 +9,21 @@ https://www.coursera.org/learn/machine-learning/
 https://developers.google.com/machine-learning/crash-course/?utm_source=google-ai&utm_medium=card-image&utm_campaign=training-hub&utm_content=ml-crash-course
 ```
 
-## WEEK 1
-1. 머신 러닝의 개념
+### 1. 머신 러닝의 개념
+  - 독립변수 : 결과 값에 영향을 주는 변수들
+  - 종속변수 : 독립 변수들을 통해 예측되는 결과 값
+  - 결측값 : 값이 없는 경우. 컬럼의 평균, 또는 중위값을 넣는다. (평균이 제일 적합함)
+  ```
+  Photo 과정
+  passed lot(정상) - 1000개 가량
+  hold lot(멈춤) 
+    - 진성 : 정말 문제 있는 것
+    - 가성 : 잘못 판단
+    - 한달 한 기계, 진성 30건 가성 100건
+    - 기계 hold 사건(X=[진성,가성], A=[30,100], B=[60, 150], C=[50,100])
+    - 이 문제는 분류 문제이다. 정상, 가성의 경우를 하나로, 진성의 경우를 또 하나로 
+ ``` 
+  
 ```
 머신러닝은 컴퓨터에게 배우는 능력을 주는 것 입니다.
 컴퓨터 프로그램이 작업 T와 관련하여 경험 E로부터 배우고, 성능 측정 P가 있을 때, P로 측정한 성능이 경험 E로 향상되는 것을 말합니다.
@@ -18,19 +31,6 @@ https://developers.google.com/machine-learning/crash-course/?utm_source=google-a
 기계가 지능을 가지기 원했고, A에서 B로 갈때 어떻게 해야 빠리 갈지 등 기계를 학습시킴으로써
 컴퓨터가 할 수 있는 일들이 다양한 분야를 걸쳐 상상이상으로 많습니다. 
 이러한 머신러닝의 최종적인 목표는 인간의 뇌와 유사하게 만드는 것입니다.
-```
-
-1. What is Machine Learning?
-```
-Two definitions of Machine Learning are offered. Arthur Samuel described it as: "the field of study that gives computers the ability to learn without being explicitly programmed." This is an older, informal definition.
-Tom Mitchell provides a more modern definition: "A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E."
-Example: playing checkers.
-  E = the experience of playing many games of checkers
-  T = the task of playing checkers.
-  P = the probability that the program will win the next game.
-
-In general, any machine learning problem can be assigned to one of two broad classifications:
-Supervised learning and Unsupervised learning.
 ```
 
 1.1 활용 예시
@@ -52,21 +52,6 @@ Supervised learning and Unsupervised learning.
 여기서 출력 값의 형태에 따라 아래와 같이 분류합니다.
 regression problem : 연속적인 결과를 예측
 classification : {0, 1} 처럼 집합으로 분류된 이산적인 결과를 예측
-```
-
-1.2 Supervised Learning
-```
-In supervised learning, we are given a data set and already know what our correct output should look like, having the idea that there is a relationship between the input and the output.
-
-Supervised learning problems are categorized into "regression" and "classification" problems. In a regression problem, we are trying to predict results within a continuous output, meaning that we are trying to map input variables to some continuous function. In a classification problem, we are instead trying to predict results in a discrete output. In other words, we are trying to map input variables into discrete categories.
-
-Example 1:
-Given data about the size of houses on the real estate market, try to predict their price. Price as a function of size is a continuous output, so this is a regression problem.
-We could turn this example into a classification problem by instead making our output about whether the house "sells for more or less than the asking price." Here we are classifying the houses based on price into two discrete categories.
-
-Example 2:
-(a) Regression - Given a picture of a person, we have to predict their age on the basis of the given picture
-(b) Classification - Given a patient with a tumor, we have to predict whether the tumor is malignant or benign.
 ```
 
 1.2.1 regression problem 
@@ -109,16 +94,6 @@ Example 2:
 https://en.wikipedia.org/wiki/List_of_numerical_analysis_software#Numerical_software_packages
 ```
 
-1.3 Unsupervised Learning
-```
-Unsupervised learning allows us to approach problems with little or no idea what our results should look like. We can derive structure from data where we don't necessarily know the effect of the variables.
-We can derive this structure by clustering the data based on relationships among the variables in the data.
-With unsupervised learning there is no feedback based on the prediction results.
-
-Example:
-Clustering: Take a collection of 1,000,000 different genes, and find a way to automatically group these genes into groups that are somehow similar or related by different variables, such as lifespan, location, roles, and so on.
-Non-clustering: The "Cocktail Party Algorithm", allows you to find structure in a chaotic environment. (i.e. identifying individual voices and music from a mesh of sounds at a cocktail party).
-```
 
 1.3 Linear regression with one variable
 
